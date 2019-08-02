@@ -3,13 +3,23 @@ package com.khamlin;
 public class Main {
 
     public static void main(String[] args) {
-        Point first = new Point(6,5);
-        Point second = new Point(3,1);
-        System.out.println(first.distance()); //  should return 7.8102496...
-        System.out.println(first.distance(second)); // should return 5.0
-        System.out.println(first.distance(2,2)); // should return 5.0
-        Point point = new Point();
-        System.out.println(point.distance()); // should return 0.0
+
+        Carpet carpet = new Carpet(3.5);
+        Floor floor = new Floor(2.75, 4.0);
+        Calculator calculator = new Calculator(floor, carpet);
+        System.out.println("total= " + calculator.getTotalCost());
+        carpet = new Carpet(1.5);
+        floor = new Floor(5.4, 4.5);
+        calculator = new Calculator(floor, carpet);
+        System.out.println("total= " + calculator.getTotalCost());
+
+//        Point first = new Point(6,5);
+//        Point second = new Point(3,1);
+//        System.out.println(first.distance()); //  should return 7.8102496...
+//        System.out.println(first.distance(second)); // should return 5.0
+//        System.out.println(first.distance(2,2)); // should return 5.0
+//        Point point = new Point();
+//        System.out.println(point.distance()); // should return 0.0
 
 
 //        VipCustomer tim = new VipCustomer();
