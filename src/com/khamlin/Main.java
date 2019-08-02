@@ -3,13 +3,22 @@ package com.khamlin;
 public class Main {
 
     public static void main(String[] args) {
-        VipCustomer tim = new VipCustomer();
-        VipCustomer ryan = new VipCustomer("Ryan", "ryan@email.com");
-        VipCustomer kevin = new VipCustomer("Kevin", "khamlin@gmail.com", 500000.00);
+        Point first = new Point(6,5);
+        Point second = new Point(3,1);
+        System.out.println(first.distance()); //  should return 7.8102496...
+        System.out.println(first.distance(second)); // should return 5.0
+        System.out.println(first.distance(2,2)); // should return 5.0
+        Point point = new Point();
+        System.out.println(point.distance()); // should return 0.0
 
-        System.out.println(tim.getCreditLimit() + " " + tim.getEmail() + " "  + tim.getName());
-        System.out.println(kevin.getCreditLimit() + " " + kevin.getEmail() + " "  + kevin.getName());
-        System.out.println(ryan.getCreditLimit() + " " + ryan.getEmail() + " "  + ryan.getName());
+
+//        VipCustomer tim = new VipCustomer();
+//        VipCustomer ryan = new VipCustomer("Ryan", "ryan@email.com");
+//        VipCustomer kevin = new VipCustomer("Kevin", "khamlin@gmail.com", 500000.00);
+//
+//        System.out.println(tim.getCreditLimit() + " " + tim.getEmail() + " "  + tim.getName());
+//        System.out.println(kevin.getCreditLimit() + " " + kevin.getEmail() + " "  + kevin.getName());
+//        System.out.println(ryan.getCreditLimit() + " " + ryan.getEmail() + " "  + ryan.getName());
 
 //        BankAccount myAccount = new BankAccount();
 //        myAccount.setAccountNumber(1800987273);
