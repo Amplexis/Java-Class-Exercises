@@ -79,6 +79,18 @@ public class Hamburger {
         }
     }
 
+    public Hamburger(String name, String bunType) {
+        this.name = name;
+        this.bunType = bunType;
+        this.meat = true;
+        this.basePrice = 6.33;
+        this.numberOfAdditions = 0;
+        this.maxAdditons = 2;
+        this.totalPrice = this.basePrice;
+        this.addItem("Fries", 0.75);
+        this.addItem("Soda", 1.99);
+    }
+
     public void addItem(String name, double price) {
         if (this.numberOfAdditions < this.maxAdditons) {
             switch(numberOfAdditions) {
