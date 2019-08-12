@@ -12,6 +12,19 @@ public class Main {
         burger.addItem("Fries", 1.72);
         burger.breakdown();
 
+        GardenBurger garden = new GardenBurger();
+
+        garden.addItem("Cheese", .35);
+        garden.addItem("Lettuce", .36);
+        garden.addItem("Tomato", .37);
+        garden.addItem("Onion", .38);
+        garden.addItem("Pepper", .39);
+        garden.addItem("Fries", .40);
+        garden.addItem("Soda", .41);
+
+
+        garden.breakdown();
+
 //        Rectangle rectangle = new Rectangle(5, 10);
 //        System.out.println("rectangle.width= " + rectangle.getWidth()); // 5.0
 //        System.out.println("rectangle.length= " + rectangle.getLength());  // 10.0
