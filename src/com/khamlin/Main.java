@@ -25,6 +25,10 @@ public class Main {
 
         garden.breakdown();
 
+        DeluxeBurger delux = new DeluxeBurger();
+        delux.addItem("Pickle", 0.77);
+        delux.breakdown();
+
 //        Rectangle rectangle = new Rectangle(5, 10);
 //        System.out.println("rectangle.width= " + rectangle.getWidth()); // 5.0
 //        System.out.println("rectangle.length= " + rectangle.getLength());  // 10.0
