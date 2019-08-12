@@ -67,6 +67,17 @@ public class Hamburger {
         this.maxAdditons = 4;
         this.totalPrice = basePrice;
     }
+    public Hamburger(String name) {
+        if (name == "Garden Burger") {
+            this.name = name;
+            this.bunType = "Brown Rye";
+            this.meat = false;
+            this.basePrice = 5.25;
+            this.numberOfAdditions = 0;
+            this.maxAdditons = 6;
+            this.totalPrice = basePrice;
+        }
+    }
 
     public void addItem(String name, double price) {
         if (this.numberOfAdditions < this.maxAdditons) {
